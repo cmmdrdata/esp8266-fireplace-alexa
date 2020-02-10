@@ -2,7 +2,7 @@
 Alexa home automation using esp8266 board w/ wifi to control an electric fireplace switch 
 
 Most of this code is directly adapted from the kakopapa/sinric github site.  
-https://github.com/kakopappa/sinric
+https://github.com/kakopappa/sinric/arduino_example/switch_example.ino
 
 I added code for controlling the switch through a mosfet device 
 
