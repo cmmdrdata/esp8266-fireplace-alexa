@@ -13,3 +13,4 @@ This sketch will turn a switch to control an electric fireplace .   It uses an w
 with wifi adapter built in.   You could also use a relay but the current draw from the esp will be higher when the fireplace 
 switch is on. 
 
+The sensor input that I used is switched LOW when the garage door is in full open position and otherwise its HIGH (which means as long as its not fully open then its HIGH and not necessarily fully closed ). 
