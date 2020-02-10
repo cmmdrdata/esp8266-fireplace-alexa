@@ -13,8 +13,8 @@ ESP8266WiFiMulti WiFiMulti;
 WebSocketsClient webSocket;
 WiFiClient client;
 
-#define MyApiKey "03c61df4-4d58-4b40-a0e2-4ebe7a047a58" // TODO: Change to your sinric API Key. Your API Key is displayed on sinric.com dashboard
-#define MySSID "AveP32423" // TODO: Change to your Wifi network SSID
+#define MyApiKey "" // TODO: Change to your sinric API Key. Your API Key is displayed on sinric.com dashboard
+#define MySSID "" // TODO: Change to your Wifi network SSID
 #define MyWifiPassword "asldjfasdfasdf" // TODO: Change to your Wifi network password
 
 #define HEARTBEAT_INTERVAL 300000 // 5 Minutes 
@@ -33,11 +33,7 @@ void turnOn(String deviceId) {
     digitalWrite(4, LOW);
     digitalWrite(2, HIGH);
   } 
-  else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") // Device ID of second device
-  { 
-    Serial.print("Turn on device id: ");
-    Serial.println(deviceId);
-  }
+
   else {
     Serial.print("Turn on for unknown device id: ");
     Serial.println(deviceId);    
@@ -52,11 +48,7 @@ void turnOff(String deviceId) {
      digitalWrite(4, HIGH);
      digitalWrite(2, LOW);
    }
-   else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") // Device ID of second device
-   { 
-     Serial.print("Turn off Device ID: ");
-     Serial.println(deviceId);
-  }
+ 
   else {
      Serial.print("Turn off for unknown device id: ");
      Serial.println(deviceId);    
